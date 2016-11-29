@@ -2,7 +2,7 @@
     'name': 'paste_from_clipboard',
     'category': 'Hidden',
     'version': '1.0',
-    'author': 'szufisher'
+    'author': 'szufisher',
     'description':
         """
 
