@@ -79,7 +79,7 @@ def auto_refresh_kanban_list(model):
         if module not in ['ir', 'res', 'base', 'bus', 'im_chat', 'mail', 'email', 
             'temp', 'workflow', 'wizard', 'email_template', 'mass']:
             action = model.env['ir.actions.act_window']
-            cnt = action.search_count([('res_model', '=', model._name), ('auto_refresh', '>', '0')])
+            cnt = action.search_count([('res_model', '=', model._name), ('auto_refresh', '>', 0)])
             if cnt > 0:
                 bus = model.env['bus.bus']
                 bus.sendone('auto_refresh_kanban_list', model._name)
